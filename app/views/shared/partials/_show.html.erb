@@ -1,0 +1,7 @@
+<h1><%= item.send(show) %></h1>
+<p><%= show_links(item) %></p>
+<div class="data">
+  <% attributes.each do |attribute| %>
+    <%= show_attribute attribute %>
+  <% end %>
+</div>

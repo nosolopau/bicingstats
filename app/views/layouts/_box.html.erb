@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Let's bug!</title>
+  <%= stylesheet_link_tag @common_stylesheets %>
+  <%= stylesheet_link_tag 'box' %>
+  <%= javascript_include_tag @common_javascripts  %>
+  <%= csrf_meta_tag %>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      init('box');
+    });
+  </script>
+</head>
+<body>
+  <div id="header">
+    <div id="logo">
+      <%= image_tag 'logo.png', :height => 60 %>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div id="content">
+    <% if notice %>
+      <p id="notice"><%= notice %></p>
+    <% end %>
+    <%= yield %>
+    <% if alert %>
+      <p class="alert"><%= alert %></p>
+    <% end %>
+  </div>
+  <div class="clear"></div>
+</body>
+</html>

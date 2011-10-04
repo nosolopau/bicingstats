@@ -1,0 +1,221 @@
+Unable to load admin/company, underlying cause No such file to load -- admin/company 
+
+ /Library/Ruby/Gems/1.8/gems/activesupport-3.0.7/lib/active_support/dependencies.rb:304:in `depend_on'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.7/lib/active_support/dependencies.rb:216:in `require_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:862:in `try_to_load_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:877:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:874:in `each'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:874:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:857:in `fixtures'
+./test/test_helper.rb:10
+/Users/Pau/NetBeansProjects/bibliojobs/test/unit/admin/company_test.rb:1:in `require'
+/Users/Pau/NetBeansProjects/bibliojobs/test/unit/admin/company_test.rb:1
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9:in `require'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:5:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:5
+Unable to load admin/job_category, underlying cause No such file to load -- admin/job_category 
+
+ /Library/Ruby/Gems/1.8/gems/activesupport-3.0.7/lib/active_support/dependencies.rb:304:in `depend_on'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.7/lib/active_support/dependencies.rb:216:in `require_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:862:in `try_to_load_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:877:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:874:in `each'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:874:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:857:in `fixtures'
+./test/test_helper.rb:10
+/Users/Pau/NetBeansProjects/bibliojobs/test/unit/admin/company_test.rb:1:in `require'
+/Users/Pau/NetBeansProjects/bibliojobs/test/unit/admin/company_test.rb:1
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9:in `require'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:5:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:5
+Unable to load admin/job, underlying cause No such file to load -- admin/job 
+
+ /Library/Ruby/Gems/1.8/gems/activesupport-3.0.7/lib/active_support/dependencies.rb:304:in `depend_on'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.7/lib/active_support/dependencies.rb:216:in `require_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:862:in `try_to_load_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:877:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:874:in `each'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:874:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:857:in `fixtures'
+./test/test_helper.rb:10
+/Users/Pau/NetBeansProjects/bibliojobs/test/unit/admin/company_test.rb:1:in `require'
+/Users/Pau/NetBeansProjects/bibliojobs/test/unit/admin/company_test.rb:1
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9:in `require'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:5:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:5
+Unable to load admin/company, underlying cause No such file to load -- admin/company 
+
+ /Library/Ruby/Gems/1.8/gems/activesupport-3.0.7/lib/active_support/dependencies.rb:304:in `depend_on'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.7/lib/active_support/dependencies.rb:216:in `require_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:862:in `try_to_load_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:877:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:874:in `each'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:874:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:857:in `fixtures'
+./test/test_helper.rb:10
+/Users/Pau/NetBeansProjects/bibliojobs/test/functional/admin/companies_controller_test.rb:1:in `require'
+/Users/Pau/NetBeansProjects/bibliojobs/test/functional/admin/companies_controller_test.rb:1
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9:in `require'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:5:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:5
+Unable to load admin/job_category, underlying cause No such file to load -- admin/job_category 
+
+ /Library/Ruby/Gems/1.8/gems/activesupport-3.0.7/lib/active_support/dependencies.rb:304:in `depend_on'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.7/lib/active_support/dependencies.rb:216:in `require_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:862:in `try_to_load_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:877:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:874:in `each'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:874:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:857:in `fixtures'
+./test/test_helper.rb:10
+/Users/Pau/NetBeansProjects/bibliojobs/test/functional/admin/companies_controller_test.rb:1:in `require'
+/Users/Pau/NetBeansProjects/bibliojobs/test/functional/admin/companies_controller_test.rb:1
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9:in `require'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:5:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:5
+Unable to load admin/job, underlying cause No such file to load -- admin/job 
+
+ /Library/Ruby/Gems/1.8/gems/activesupport-3.0.7/lib/active_support/dependencies.rb:304:in `depend_on'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.7/lib/active_support/dependencies.rb:216:in `require_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:862:in `try_to_load_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:877:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:874:in `each'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:874:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:857:in `fixtures'
+./test/test_helper.rb:10
+/Users/Pau/NetBeansProjects/bibliojobs/test/functional/admin/companies_controller_test.rb:1:in `require'
+/Users/Pau/NetBeansProjects/bibliojobs/test/functional/admin/companies_controller_test.rb:1
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9:in `require'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:5:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:5
+Unable to load admin/company, underlying cause No such file to load -- admin/company 
+
+ /Library/Ruby/Gems/1.8/gems/activesupport-3.0.7/lib/active_support/dependencies.rb:304:in `depend_on'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.7/lib/active_support/dependencies.rb:216:in `require_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:862:in `try_to_load_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:877:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:874:in `each'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:874:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:857:in `fixtures'
+./test/test_helper.rb:10
+/Users/Pau/NetBeansProjects/bibliojobs/test/unit/admin/company_test.rb:1:in `require'
+/Users/Pau/NetBeansProjects/bibliojobs/test/unit/admin/company_test.rb:1
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9:in `require'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:5:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:5
+Unable to load admin/job_category, underlying cause No such file to load -- admin/job_category 
+
+ /Library/Ruby/Gems/1.8/gems/activesupport-3.0.7/lib/active_support/dependencies.rb:304:in `depend_on'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.7/lib/active_support/dependencies.rb:216:in `require_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:862:in `try_to_load_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:877:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:874:in `each'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:874:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:857:in `fixtures'
+./test/test_helper.rb:10
+/Users/Pau/NetBeansProjects/bibliojobs/test/unit/admin/company_test.rb:1:in `require'
+/Users/Pau/NetBeansProjects/bibliojobs/test/unit/admin/company_test.rb:1
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9:in `require'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:5:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:5
+Unable to load admin/job, underlying cause No such file to load -- admin/job 
+
+ /Library/Ruby/Gems/1.8/gems/activesupport-3.0.7/lib/active_support/dependencies.rb:304:in `depend_on'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.7/lib/active_support/dependencies.rb:216:in `require_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:862:in `try_to_load_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:877:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:874:in `each'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:874:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:857:in `fixtures'
+./test/test_helper.rb:10
+/Users/Pau/NetBeansProjects/bibliojobs/test/unit/admin/company_test.rb:1:in `require'
+/Users/Pau/NetBeansProjects/bibliojobs/test/unit/admin/company_test.rb:1
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9:in `require'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:5:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:5
+Unable to load admin/company, underlying cause No such file to load -- admin/company 
+
+ /Library/Ruby/Gems/1.8/gems/activesupport-3.0.7/lib/active_support/dependencies.rb:304:in `depend_on'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.7/lib/active_support/dependencies.rb:216:in `require_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:862:in `try_to_load_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:877:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:874:in `each'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:874:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:857:in `fixtures'
+./test/test_helper.rb:10
+/Users/Pau/NetBeansProjects/bibliojobs/test/unit/admin_test.rb:1:in `require'
+/Users/Pau/NetBeansProjects/bibliojobs/test/unit/admin_test.rb:1
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9:in `require'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:5:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:5
+Unable to load admin/job_category, underlying cause No such file to load -- admin/job_category 
+
+ /Library/Ruby/Gems/1.8/gems/activesupport-3.0.7/lib/active_support/dependencies.rb:304:in `depend_on'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.7/lib/active_support/dependencies.rb:216:in `require_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:862:in `try_to_load_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:877:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:874:in `each'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:874:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:857:in `fixtures'
+./test/test_helper.rb:10
+/Users/Pau/NetBeansProjects/bibliojobs/test/unit/admin_test.rb:1:in `require'
+/Users/Pau/NetBeansProjects/bibliojobs/test/unit/admin_test.rb:1
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9:in `require'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:5:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:5
+Unable to load admin/job, underlying cause No such file to load -- admin/job 
+
+ /Library/Ruby/Gems/1.8/gems/activesupport-3.0.7/lib/active_support/dependencies.rb:304:in `depend_on'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.7/lib/active_support/dependencies.rb:216:in `require_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:862:in `try_to_load_dependency'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:877:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:874:in `each'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:874:in `require_fixture_classes'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.7/lib/active_record/fixtures.rb:857:in `fixtures'
+./test/test_helper.rb:10
+/Users/Pau/NetBeansProjects/bibliojobs/test/unit/admin_test.rb:1:in `require'
+/Users/Pau/NetBeansProjects/bibliojobs/test/unit/admin_test.rb:1
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9:in `require'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:9
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:5:in `each'
+/Library/Ruby/Gems/1.8/gems/rake-0.9.2/lib/rake/rake_test_loader.rb:5
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO "companies" ("name", "info", "website_url", "updated_at", "created_at") VALUES (NULL, NULL, NULL, '2011-09-21 12:31:43.069715', '2011-09-21 12:31:43.069715')

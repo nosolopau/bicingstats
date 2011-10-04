@@ -1,0 +1,6 @@
+<% if current_admin %>
+  <%= link_to "Editar perfil", edit_admin_admin_path(:current) %>
+  <%= link_to "Cerrar sesión", admin_logout_path %>
+<% else %>
+  <%= link_to "Iniciar sesión", admin_login_path %>
+<% end %>

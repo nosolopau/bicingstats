@@ -1,0 +1,43 @@
+<% show = nil unless show %>
+<% replace = {} unless replace %>
+<h1><%= t_c %></h1>
+<%= index_links %>
+<% if items.nil? or items.empty? %>
+  <p class="notice"><%= t('common.empty', :what => t_c.downcase) %>. <%= new_link_to t_for(class_name, 'common.create new'), eval("new_#{model_name}_path") %></p>
+<% else %>
+  <table id="sorted_table" class="sorted_table tablesorter">
+    <thead>
+      <tr>
+        <% attributes.each do |attribute| %>
+          <th><%=t_a attribute %></th>
+        <% end %>
+        <th><%=t 'common.actions' %></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% items.each do |item| %>
+        <tr>
+          <% attributes.each do |attribute| %>
+            <td>
+            <% if replace.key?(attribute) %>
+              <% if replace[attribute] == '$client_link' %>
+                <% client = eval("item.client") %>
+                <% if client %>
+                  <%= client_link(client) %>
+                <% end %>
+              <% else %>
+                <%= item.send(attribute) ? eval("item.#{replace[attribute]}"): blank %>
+              <% end %>
+            <% else %>
+              <%= (attribute == show)? show_link_to(item.send(attribute), item): item.send(attribute) %>
+            <% end %>
+            </td>
+          <% end %>
+          <td><%= table_links item %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
+
+<br />
