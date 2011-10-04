@@ -1,0 +1,9 @@
+<% @common_stylesheets = ['global', 'fancybox'] %>
+<% @common_javascripts = ['application', 'jquery', 'rails', 'jquery.fancybox', 'jquery.metadata', 'jquery.corner'] %>
+
+<% if params[:mode] == 'box' %>
+  <%= render 'layouts/box' %>
+<% else %>
+  <%= render 'layouts/normal' %>
+<% end %>
+

@@ -1,0 +1,41 @@
+<div id="job_category_selector" class="rounded_small">
+  <%= select_tag 'category', options_from_collection_for_select(@categories, :id, :name) %>
+</div>
+<div id="last_jobs">
+  <h1>Últimas ofertas</h1>
+  <ul class="job_list">
+    <%= render :partial => 'shared/partials/job', :collection => @jobs %>
+  </ul>
+</div>
+
+<div id="featured_company">
+  <h1>Empezando</h1>
+  <p><span class="small_logo"><span class="orange">biblio</span>jobs</span> es el portal de empleo del sector de la información y la documentación.</p>
+  <p>Síguenos en <a href="http://twitter.com/<%= my_config(:twitter_id) %>">@<%= my_config(:twitter_id) %></a> o <a href="<%= my_config(:facebook_url) %>">encuéntranos en Facebook.</a></p>
+  <p>También puedes <%= link_to 'suscribirte a nuestro canal de ofertas de empleo', jobs_rss_path %>.</p>
+  <p>
+    <a href="http://twitter.com/<%= my_config(:twitter_id) %>"><%= image_tag('twitter_32.png') %></a>
+    <a href="<%= my_config(:facebook_url) %>"><%= image_tag 'facebook_32.png' %></a>
+  </p>
+  <p>
+  <div class="fb">
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="fb-like-box" data-href="<%= my_config(:facebook_url) %>" data-width="240" data-show-faces="false" data-stream="false" data-header="true"></div></div>
+  </p>
+<% if @featured_company %>
+    <h1>Empresa destacada</h1>
+    <h2><%= link_to @featured_company.name, @featured_company %></h2>
+    <p><%= my_auto_link @featured_company.info %></p>
+    <p class="button_links"><%= link_to "Leer más...", @featured_company %></p>
+  <% end %>
+</div>
+<div class="clear"></div>
