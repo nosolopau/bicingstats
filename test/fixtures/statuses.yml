@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  available: 1
+  freespace: 1
+  name: MyString
+  timestamp: 2011-10-04 21:33:20
+  stid: 1
+  coordinates: MyString
+
+two:
+  available: 1
+  freespace: 1
+  name: MyString
+  timestamp: 2011-10-04 21:33:20
+  stid: 1
+  coordinates: MyString

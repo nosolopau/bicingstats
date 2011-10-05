@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-Bibliojobs::Application.load_tasks
+Bicing::Application.load_tasks

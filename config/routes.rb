@@ -1,9 +1,5 @@
-Bibliojobs::Application.routes.draw do
-  resources :job_categories
-  resources :companies
-
-  match 'jobs/rss', :to =>'jobs#index', :format => 'rss'
-  resources :jobs
+Bicing::Application.routes.draw do
+  resources :statuses
 
   root :to => "main#index"
   
@@ -13,9 +9,6 @@ Bibliojobs::Application.routes.draw do
 
     resources :admin_sessions
     resources :admins
-    resources :companies
-    resources :job_categories
-    resources :jobs
 
     match 'login', :to => 'admin_sessions#new', :as => "login"
     match 'logout', :to => 'admin_sessions#destroy', :as => "logout"

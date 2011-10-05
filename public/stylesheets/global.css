@@ -3,8 +3,8 @@ hr{border:0;background-color:#ddd;height:1px;margin:3em 2em;}
 ul{list-style:none;}
 fieldset{border:0;margin:0;padding: 0;}
 img{border:0;vertical-align:middle;}
-h1{margin-top:0;font-size:1.9em;color: #ff8000;;border-bottom: 3px solid #eee;padding: 10px 0 10px 0}
-h2{margin-top:1.3em;font-size:1.3em;color:#222;color: #ff8000;border-bottom: 2px solid #eee;padding: 10px 0 10px 0}
+h1{margin-top:0;font-size:1.9em;color: #c00;;border-bottom: 3px solid #eee;padding: 10px 0 10px 0}
+h2{margin-top:1.3em;font-size:1.3em;color:#222;color: #c00;border-bottom: 2px solid #eee;padding: 10px 0 10px 0}
 h1 a, h2 a{color:inherit;text-decoration: none;}
 h3{margin-top:.2em;font-size:1em;color:#666;}
 a{color: #000; text-decoration: underline; padding: 1px;}
@@ -15,10 +15,10 @@ a:focus{outline: none; }
 #user{margin-top: 1.2em;}
 input, select{border: 1px solid #ccc; padding: 2px;font-size: 1.1em;font-weight: bold;}
 textarea{font-family: Arial, sans-serif; font-size: 1em; border: 1px solid #ccc; padding: 2px; height: 6em;}
-textarea:focus, input:focus, select:focus{border: 1px solid #ff8000; }
+textarea:focus, input:focus, select:focus{border: 1px solid #c00; }
 
 #wrapper{width: 1000px;margin: 0 auto 1em auto;}
-.orange{color: #ff8000;font-weight:900;}
+.orange{color: #c00;font-weight:900;}
 .field{margin-bottom:0.5em;}
 .actions input{margin: 0.5em 0 1em 0; font-weight: bold; background: url('../images/grad_button.png') repeat-x; font-size: 1.1em;}
 .actions input:hover{background-image: url('../images/grad_button_hover.png')}
@@ -31,6 +31,6 @@ textarea:focus, input:focus, select:focus{border: 1px solid #ff8000; }
 .field_with_errors{display: inline;color:#c00;}
 .field_with_errors input, .field_with_errors textarea{border-color:#c00;}
 .button_links a{background: #666;color: #fff !important;text-decoration: none;padding: 2px 7px 2px 7px;font-weight: bold;}
-.button_links a:hover{background-color: #ff8000}
+.button_links a:hover{background-color: #c00}
 form{margin-top:1em;}
 .fb{border: 3px solid #eee;}

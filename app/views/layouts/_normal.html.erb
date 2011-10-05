@@ -1,31 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bibliojobs - tu portal de empleo en Información y Documentación</title>
+  <title>mybicing</title>
   <%= stylesheet_link_tag @common_stylesheets %>
   <%= stylesheet_link_tag  'normal', 'tables', :media => 'screen' %>
   <%= javascript_include_tag @common_javascripts  %>
   <%= javascript_include_tag 'jquery.cookie' %>
   <%= javascript_include_tag 'jquery.json' %>
   <%= javascript_include_tag 'jquery.datatables' %>
-  <%= auto_discovery_link_tag(:rss, {:controller => "jobs"}) %>
   <link href='http://fonts.googleapis.com/css?family=Maven+Pro|Varela' rel='stylesheet' type='text/css'>
 
   <%= stylesheet_link_tag 'print', :media => 'print' %>
 
   <%= csrf_meta_tag %>
-  <script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-26068351-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-  </script>
   <script type="text/javascript">
     $(document).ready(function(){
       init('normal');
@@ -36,18 +23,17 @@
   <div id="wrapper">
     <div id="header">
       <div id="logo">
-        <a href="/"><span class="orange">biblio</span>jobs</a>
+        <a href="/"><span class="orange">my</span>bicing</a>
       </div>
       <div id="user">
         <span class="button_links">
-          <%= namespace_render 'nav' %>
         </span>
       </div>
       <div class="clear"></div>
-      <div id="tagline">Tu portal de empleo en Información y Documentación</div>
+      <div id="tagline"></div>
     </div>
     <div id="menu">
-      <%= namespace_render 'menu' %>
+      <%= render 'shared/menu' %>
     </div>
     <div id="content">
       <% if notice %>
@@ -58,7 +44,7 @@
       <% end %>
       <%= yield %>
     </div>
-    <div id="footer">copyright &copy; 2011 <a href="http://nuuve.com" target="_blank">nuuve</a></div>
+    <div id="footer">Copyright &copy; 2011 <a href="http://nosolopau.com" target="_blank">Pau</a></div>
     <div class="clear"></div>
   </div>
 </body>
