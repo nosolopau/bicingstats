@@ -1,0 +1,26 @@
+<h1>The data</h1>
+<p><span class="button_links"><%= link_to 'web',  statuses_path %> <%= link_to 'json', statuses_path(:format => :json) %> <%= link_to 'xml',  statuses_path(:format => :xml) %></span></p>
+<table id="sorted_table" class="tablesorter">
+  <thead>
+    <tr>
+      <th>Id.</th>
+      <th>Station id</th>
+      <th>Station name</th>
+      <th>Available</th>
+      <th>Free space</th>
+      <th>Timestamp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @statuses.each do |status| %>
+      <tr>
+        <td><%= status.id %></td>
+        <td><%= status.station_id %></td>
+        <td><%= status.name %></td>
+        <td><%= status.available %></td>
+        <td><%= status.free_space %></td>
+        <td><%= status.timestamp %></td>
+      </tr>
+    <% end %>
+   </tbody>
+</table>

@@ -1,13 +1,13 @@
-#header{padding:2em 1em 1em 1em;background: #eee;height: 12em;}
+#header{padding:2em 1em 1em 1em;background: #eee;height: 10em;}
 #content{margin:0;padding: 1em 2em 4em 2em;background: #fff;min-height: 20em;}
-#footer{font-family: 'Varela', sans-serif;font-size:1em;color:#666;padding:2em 1em 1em 1em;background: #eee;text-transform: uppercase}
-#footer a{text-decoration: none;color:#ff8000;font-weight: bold;}
+#footer{font-family: 'Varela', sans-serif;font-size:1em;color:#666;padding:2em 1em 1em 1em;background: #eee;text-transform: lowercase}
+#footer a{text-decoration: none;color:#c00;font-weight: bold;}
 #featured_company{float:right;width: 250px;}
 #job_category_selector{margin: 0 0 2.5em 0;background: #eee;padding: .5em;}
 #last_jobs{float:left;width: 620px;}
-#menu{background: #ff8000;border-bottom: 10px solid #eee}
+#menu{background: #c00;border-bottom: 10px solid #eee}
 #user{float:right;padding: 1em;}
-#logo{float:left;font-family: 'Varela', sans-serif;font-size: 5em;color:#888;font-weight: bold;text-transform:uppercase;letter-spacing: -0.07em;
+#logo{float:left;font-family: 'Varela', sans-serif;font-size: 5em;color:#888;font-weight: bold;text-transform:lowercase;letter-spacing: -0.07em;
 font-weight: 100;}
 .small_logo{font-family: 'Varela', sans-serif;color:#666;text-transform:uppercase;}
 #logo a{color:inherit;text-decoration: none;background: transparent !important}
@@ -15,7 +15,7 @@ font-weight: 100;}
 #tagline{font-family: 'Varela', sans-serif;font-size:1.4em;color:#777;text-transform:lowercase;margin-left:7px;}
 .editor{width: 500px;height: 150px;}
 #menu a{color:#fff;text-decoration: none;font-weight: bold;font-size: 1.3em;}
-#menu ul{margin: 0;padding: 1em;background: #ff8000;}
+#menu ul{margin: 0;padding: 1em;background: #c00;}
 #menu li{padding:.6em 1em .4em 1em;margin-bottom: .1em;display: inline;}
 #menu li.active{background-color: #333;}
 #menu li.active a{color:#fff;}
