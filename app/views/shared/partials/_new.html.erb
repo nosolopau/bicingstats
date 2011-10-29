@@ -1,7 +1,0 @@
-<h1><%= t_for class_name, 'common.new' %> </h1>
-<p><%= back_link %></p>
-<% if !class_name.validators_on(:client_id).empty? && current_user.accessible_clients.empty?  %>
-  <p class="alert"><%= t('common.clients_needed') %></p>
-<% else %>
-  <%= render controller.controller_path + '/form' %>
-<% end %>
