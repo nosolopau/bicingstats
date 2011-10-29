@@ -1,9 +1,0 @@
-<% if current_admin %>
-  <% admin = ['jobs', 'job_categories', 'companies', 'admins'] %>
-  <div class="title rounded_top"><%= image_tag 'menu/admin.png'%> Administrador</div>
-  <ul class="rounded_bottom">
-    <% admin.each do |item| %>
-      <%= menu_item item, :admin => true %>
-    <% end %>
-  </ul>
-<% end %>

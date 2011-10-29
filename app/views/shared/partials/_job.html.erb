@@ -1,7 +1,0 @@
-<li>
-  <h2><%= link_to "#{job.title} #{"en #{job.location}" unless job.location.blank?}", job %></h2>
-  <h3>Publicada por <%= link_to job.company_name, job.company %> hace <%= time_ago_in_words job.created_at %></h3>
-  <p><%= my_auto_link truncate(job.description, :length => 300, :omission => "..", :separator => ' ') %>. <%= link_to 'Leer más...', job %></p>
-  <p class="button_links"><%= link_to job.job_category.name, job.job_category %> </p>
-</li>
-
