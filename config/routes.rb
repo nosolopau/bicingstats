@@ -3,16 +3,7 @@ Bicing::Application.routes.draw do
 
   root :to => "main#index"
   
-  namespace :admin do
-    root :to => "main#index"
-    match "installer", :to => "installer#index"
-
-    resources :admin_sessions
-    resources :admins
-
-    match 'login', :to => 'admin_sessions#new', :as => "login"
-    match 'logout', :to => 'admin_sessions#destroy', :as => "logout"
-  end
+  match 'update_data' => "statuses#update_data"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
