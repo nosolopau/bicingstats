@@ -1,6 +1,6 @@
 class Status < ActiveRecord::Base
   def self.create_from_remote
-    if Status.last && (Time.now > Status.last.timestamp + 5.minute)
+    if (Status.last == nil) || (Status.last && (Time.now > Status.last.timestamp + 5.minute))
       begin
         result = Net::HTTP.get(URI.parse('http://rocboronat.net/barcelonabicing/bcnJ?all=1'))
         remote_statuses = ActiveSupport::JSON.decode(result)
