@@ -1,5 +1,29 @@
 <h1>The data</h1>
-<p><span class="button_links"><%= link_to 'html',  statuses_path %> <%= link_to 'json', statuses_path(:format => :json) %> <%= link_to 'xml',  statuses_path(:format => :xml) %></span></p>
+<% if params[:station_id] %>
+<h2><%= @sample_station and @sample_station.name %></h2>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Time');
+        data.addColumn('number', 'Available');
+        data.addColumn('number', 'Free space');
+        data.addRows([
+          <% @statuses.each do |status| %>
+          ['<%= status.timestamp %> ', <%= status.available %> , <%= status.free_space %>],
+          <% end %>
+        ]);
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, {width: '100%', height: 400, title: 'Availability'});
+      }
+    </script>
+        <div id="chart_div"></div>
+
+<% end %>
+<p><span class="button_links"><%= link_to 'html',  statuses_path(@conditions) %> <%= link_to 'json', statuses_path({:format => :json}.merge(@conditions)) %> <%= link_to 'xml',  statuses_path({:format => :xml}.merge(@conditions)) %></span></p>
 <table id="sorted_table" class="tablesorter">
   <thead>
     <tr>
@@ -15,7 +39,7 @@
     <% @statuses.each do |status| %>
       <tr>
         <td><%= status.id %></td>
-        <td><%= status.station_id %></td>
+        <td><%= link_to status.station_id, statuses_path(:station_id => status.station_id) %></td>
         <td><%= status.name %></td>
         <td><%= status.available %></td>
         <td><%= status.free_space %></td>
