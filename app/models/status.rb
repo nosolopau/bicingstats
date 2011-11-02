@@ -9,8 +9,8 @@ class Status < ActiveRecord::Base
 
         remote_statuses.each do |remote_status|
           Status.create(
-            :free_space => remote_status["foratsPlens"].to_i,
-            :available => remote_status["foratsBuits"].to_i,
+            :free_space => remote_status["foratsBuits"].to_i,
+            :available => remote_status["foratsPlens"].to_i,
             :station_id => remote_status["id"],
             :timestamp => time,
             :coordinates => "#{remote_status['x']}, #{remote_status['y']}",
