@@ -2,7 +2,14 @@ class StatusesController < ApplicationController
   # GET /statuses
   # GET /statuses.xml
   def index
-    @statuses = Status.all
+    if params[:station_id]
+      @conditions = {:station_id => params[:station_id]}
+      @statuses = Status.find(:all, :conditions => @conditions)
+      @sample_station = @statuses.first
+    else
+      @conditions = {}
+      @statuses = Status.find(:all, :conditions => @conditions)
+    end    
 
     respond_to do |format|
       format.html # index.html.erb
