@@ -1,9 +1,11 @@
 Bicing::Application.routes.draw do
-  resources :statuses
+  resources :samples do
+    resources :statuses
+  end
 
   root :to => "main#index"
   
-  match 'update_data' => "statuses#update_data"
+  match 'update_data' => "samples#update_data"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

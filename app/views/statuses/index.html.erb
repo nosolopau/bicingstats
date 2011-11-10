@@ -1,29 +1,12 @@
-<h1>The data</h1>
-<% if params[:station_id] %>
-<h2><%= @sample_station and @sample_station.name %></h2>
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript">
-      google.load("visualization", "1", {packages:["corechart"]});
-      google.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Time');
-        data.addColumn('number', 'Available');
-        data.addColumn('number', 'Free space');
-        data.addRows([
-          <% @statuses.each do |status| %>
-          ['<%= status.timestamp %> ', <%= status.available %> , <%= status.free_space %>],
-          <% end %>
-        ]);
-
-        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
-        chart.draw(data, {width: '100%', height: 400, title: 'Availability'});
-      }
-    </script>
-        <div id="chart_div"></div>
-
-<% end %>
-<p><span class="button_links"><%= link_to 'html',  statuses_path(@conditions) %> <%= link_to 'json', statuses_path({:format => :json}.merge(@conditions)) %> <%= link_to 'xml',  statuses_path({:format => :xml}.merge(@conditions)) %></span></p>
+<h1>Statuses for sample <%= @sample.id %></h1>
+<p>Sample obtained at <%= @sample.created_at %></p>
+<p>
+  <span class="button_links">
+    <%= link_to 'html', sample_statuses_path(@sample) %>
+    <%= link_to 'json', sample_statuses_path(@sample, :format => :json) %>
+    <%= link_to 'xml',  sample_statuses_path(@sample, :format => :xml) %>
+  </span>
+</p>
 <table id="sorted_table" class="tablesorter">
   <thead>
     <tr>
@@ -39,7 +22,7 @@
     <% @statuses.each do |status| %>
       <tr>
         <td><%= status.id %></td>
-        <td><%= link_to status.station_id, statuses_path(:station_id => status.station_id) %></td>
+        <td><%= status.station_id %></td>
         <td><%= status.name %></td>
         <td><%= status.available %></td>
         <td><%= status.free_space %></td>
