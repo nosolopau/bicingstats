@@ -1,0 +1,37 @@
+<h1>Samples</h1>
+<p>
+  <span class="button_links">
+    <%= link_to 'html', samples_path %>
+    <%= link_to 'json', samples_path(:format => :json) %>
+    <%= link_to 'xml',  samples_path(:format => :xml) %>
+  </span>
+</p>
+<table id="sorted_table" class="tablesorter">
+  <thead>
+    <tr>
+      <th>Id.</th>
+      <th>Timestamp</th>
+      <th>Available</th>
+      <th>Free space</th>
+      <th>Total</th>
+      <th>Empty stations</th>
+      <th>Not empty stations</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @samples.each do |sample| %>
+    <% @stats = sample.stats %>
+      <tr>
+        <td><%= link_to sample.id, sample_statuses_path(sample) %></td>
+        <td><%= sample.created_at %></td>
+        <td><%= @stats[:available] %></td>
+        <td><%= @stats[:free_space] %></td>
+        <td><%= @stats[:free_space] + @stats[:available] %></td>
+        <td><%= @stats[:empty_stations] %></td>
+        <td><%= @stats[:not_empty_stations] %></td>
+        <td><%= link_to 'show stats', sample %> <%= link_to 'show status', sample_statuses_path(sample) %></td>
+      </tr>
+    <% end %>
+   </tbody>
+</table>

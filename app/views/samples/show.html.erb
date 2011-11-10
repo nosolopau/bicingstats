@@ -1,0 +1,9 @@
+<h1>Sample <%= @sample.id %></h1>
+<p>Sample obtained at <%= @sample.created_at %></p>
+<h2>Stats</h2>
+<ul>
+  <li>Available bikes: <strong><%= @stats[:available] %></strong></li>
+  <li>Free space: <strong><%= @stats[:free_space] %></strong></li>
+  <li>Empty stations: <strong><%= @stats[:empty_stations] %></strong></li>
+  <li>Not-empty stations: <strong><%= @stats[:not_empty_stations] %></strong></li>
+</ul>
