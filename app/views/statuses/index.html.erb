@@ -22,7 +22,7 @@
     <% @statuses.each do |status| %>
       <tr>
         <td><%= status.id %></td>
-        <td><%= status.station_id %></td>
+        <td><%= link_to status.station_id, station_path(status.station_id) %></td>
         <td><%= status.name %></td>
         <td><%= status.available %></td>
         <td><%= status.free_space %></td>

@@ -3,6 +3,10 @@ Bicing::Application.routes.draw do
     resources :statuses
   end
 
+  resources :stations do
+    resources :statuses
+  end
+
   root :to => "main#index"
   
   match 'update_data' => "samples#update_data"
