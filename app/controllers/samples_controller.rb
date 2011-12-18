@@ -2,7 +2,7 @@ class SamplesController < ApplicationController
   # GET /samples
   # GET /samples.xml
   def index
-    @samples = Sample.all
+    @samples = Sample.paginate(:page => params[:page])
 
     respond_to do |format|
       format.html # index.html.erb
