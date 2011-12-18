@@ -2,7 +2,7 @@ class SamplesController < ApplicationController
   # GET /samples
   # GET /samples.xml
   def index
-    @samples = Sample.paginate(:page => params[:page])
+    @samples = Sample.paginate(:page => params[:page]).order('timestamp desc')
 
     respond_to do |format|
       format.html # index.html.erb
