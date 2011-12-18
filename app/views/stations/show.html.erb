@@ -1,0 +1,54 @@
+<script type="text/javascript">
+  google.load("visualization", "1", {packages:["corechart"]});
+  google.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Time');
+    data.addColumn('number', 'Available bikes');
+    data.addRows([
+      <% @statuses.each do |status| %>
+        ['<%= status.timestamp.strftime("%H:%M") %>', <%= status.available %>],
+      <% end %>
+    ]);
+
+    var options = {
+      title: 'Available bikes',
+      hAxis: {slantedTextAngle: '90', slantedText: true}
+    };
+
+    var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+  }
+</script>
+<h1>Stats for station <%= @station %></h1>
+<p>
+  <span class="button_links">
+    <%= link_to 'html', station_statuses_path(@station) %>
+    <%= link_to 'json', station_statuses_path(@station, :format => :json) %>
+    <%= link_to 'xml',  station_statuses_path(@station, :format => :xml) %>
+  </span>
+</p>
+<div id="chart_div"></div>
+<table id="sorted_table" class="tablesorter">
+  <thead>
+    <tr>
+      <th>Id.</th>
+      <th>Station id</th>
+      <th>Available</th>
+      <th>Free space</th>
+      <th>Timestamp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @statuses.each do |status| %>
+      <tr>
+        <td><%= status.id %></td>
+        <td><%= status.station_id %></td>
+        <td><%= status.available %></td>
+        <td><%= status.free_space %></td>
+        <td><%= status.timestamp %></td>
+      </tr>
+    <% end %>
+   </tbody>
+</table>
+<%= pagination @statuses %>
