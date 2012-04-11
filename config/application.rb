@@ -8,6 +8,11 @@ Bundler.require(:default, Rails.env) if defined?(Bundler)
 
 module Bicing
   class Application < Rails::Application
+    def self.load_config
+      setup_config = YAML::load(File.read(File.join(Rails.root, "config", "config.yml"))) || {}
+    end
+    
+    config.global = load_config
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

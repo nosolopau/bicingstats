@@ -24,8 +24,10 @@ class SamplesController < ApplicationController
     end
   end
 
+  # GET /update_data?token=123
+  # GET /update_data.xml?token=123
   def update_data
-    if params[:token] == 'abda821ss'
+    if token_is_valid?
       if Sample.create_from_remote
         flash[:notice] = "Data updated"
       else
@@ -35,6 +37,17 @@ class SamplesController < ApplicationController
       flash[:notice] = "Error"
     end
 
-    redirect_to root_url
+    respond_to do |format|
+      format.html { redirect_to root_url }
+      format.xml  { head :ok }
+      format.json { head :ok }
+    end
+    
+  end
+
+private
+
+  def token_is_valid?
+    params[:token] == Bicing::Application.config.global["token"]
   end
 end

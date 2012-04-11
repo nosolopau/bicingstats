@@ -22,13 +22,12 @@ class Sample < ActiveRecord::Base
 
   def self.create_from_remote
     begin
-      result = Net::HTTP.get(URI.parse('http://rocboronat.net/barcelonabicing/bcnJ?all=1'))
+      result = Net::HTTP.get(URI.parse(Bicing::Application.config.global["samples_service_url"]))
       remote_statuses = ActiveSupport::JSON.decode(result)
       time = Time.now
       conversor = Iconv.new('UTF-8', 'WINDOWS-1252')
 
       sample = Sample.create
-
       remote_statuses.each do |remote_status|
         status = Status.new(
           :free_space => remote_status["foratsBuits"].to_i,
