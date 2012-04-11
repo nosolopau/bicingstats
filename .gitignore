@@ -1,0 +1,5 @@
+*.sublime*
+*.dat
+*.tmproj
+tmp
+log
