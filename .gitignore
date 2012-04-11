@@ -3,3 +3,4 @@
 *.tmproj
 tmp
 log
+db/development.sqlite3
