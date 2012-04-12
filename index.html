@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Bicingstats by nosolopau</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Bicingstats</h1>
+        <p>An historic record of the occupation data of the Barcelona’s Bicing system</p>
+        <p class="view"><a href="https://github.com/nosolopau/bicingstats">View the Project on GitHub <small>nosolopau/bicingstats</small></a></p>
+        <ul>
+          <li><a href="https://github.com/nosolopau/bicingstats/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/nosolopau/bicingstats/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/nosolopau/bicingstats">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Bicingstats</h1>
+
+<p>This application provides an historic record of the occupation data of the Barcelona's bicing system, by offering information retrieved from the <a href="http://rocboronat.net/index.php/es/projectes/48-bicing-api">Bicing API</a> by <a href="http://rocboronat.net">Roc Boronat</a>.</p>
+
+<p>You can see bicingstats in action at <a href="http://bicingstats.heroku.com">bicingstats.heroku.com</a>.</p>
+
+<h1>Configuration</h1>
+
+<p>The application uses a configuration file that can be found at config/config.yml. Inside this configuration file there are two pairs key-value, as follows: </p>
+
+<div class="highlight">
+<pre><span class="l-Scalar-Plain">samples_service_url</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain"><a href="http://rocboronat.net/barcelonabicing/bcnJ?all=1">http://rocboronat.net/barcelonabicing/bcnJ?all=1</a></span>
+<span class="l-Scalar-Plain">token</span><span class="p-Indicator">:</span> <span class="s">"123"</span>
+</pre>
+</div>
+
+
+<p>The param <code>samples_service_url</code> indicates the URL for data retrieval. The param <code>token</code> is a security paraphrase that can be used to securize access to the update data function.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/nosolopau">nosolopau</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
