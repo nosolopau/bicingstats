@@ -1,0 +1,4 @@
+= Bicingstats
+
+This application provides an historic record of the occupation data of the Barcelona's bicing system, by offering information retrieved from the [Bicing API]http://rocboronat.net/index.php/es/projectes/48-bicing-api by [Roc Boronat]http://rocboronat.net.
+
