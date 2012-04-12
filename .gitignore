@@ -2,5 +2,5 @@
 *.dat
 *.tmproj
 tmp
-log
+log/development.log
 db/development.sqlite3
