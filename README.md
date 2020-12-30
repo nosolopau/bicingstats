@@ -1,6 +1,6 @@
 # Bicingstats
 
-This application provided an historic record of usage data for Barcelona's public bikes system, by offering information retrieved from the {Bicing API}[https://blog.rocboron.at/bicing-api/] by {Roc Boronat}[http://rocboronat.net].
+This application provided an historic record of usage data for Barcelona's public bikes system, by offering information retrieved from the [Bicing API](https://blog.rocboron.at/bicing-api/) by [Roc Boronat](http://rocboronat.net).
 
 ## Configuration
 
