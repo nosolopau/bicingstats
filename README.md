@@ -11,3 +11,4 @@ The application uses a configuration file that can be found at `config/config.ym
 
 The param `samples_service_url` indicates the URL for data retrieval. The param +token+ is a security paraphrase that can be used to securize access to the update data function.
 
+![A screenshot of Bicingstats](bicing.png?raw=true "Bicingstats in action")
